@@ -1,0 +1,166 @@
+body {
+    background-color: #080d1a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-card {
+    width: 400px;
+    padding: 35px;
+    background-color: #111a2e;
+    border: 1px solid #1e2d47;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+.logo h1 {
+    font-size: 28px;
+    color: rgb(255,255,255);
+}
+
+.logo span {
+    color: rgb(0,200,255);
+}
+
+.welcome {
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: rgb(155,169,189);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group input {
+    padding: 13px;
+    background-color: rgb(8,13,26);
+    border: 1px solid rgb(38,54,80);
+    border-radius: 8px;
+    color: rgb(255,255,255);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(0,200,255);
+    color: rgb(8,13,26);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(0,157,204);
+}
+
+.register {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(155,169,189);
+}
+.register a {
+    color: rgb(0,200,255);
+    text-decoration: none;
+}
+
+@media (max-width:480px) {
+    .login-card {
+        width: 90%;
+        padding: 25px;
+    }
+    .logo h1 {
+        font-size: 24px;
+
+    }
+    .welcome h2 {
+        font-size: 20px;
+    }
+}
+
+#login-message {
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(0, 200, 255);
+    font-size: 14px;
+}
+
+
+#password-strength {
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(0, 220, 255);
+}
+
+
+/* MENSAGENS DO LOGIN */
+
+#login-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.message-success {
+    color: rgb(46, 204, 113);
+}
+
+.message-error {
+    color: rgb(255, 80, 80);
+}
+
+#password-strength {
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(0, 220, 255);
+}
+
+
+
+#forget-email {
+    margin-top: 12px;
+    background: transparent;
+    color: rgb(0, 220, 255);
+    border: 1px solid rgb(0, 220, 255);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#forget-email:hover {
+    background: rgb(0, 220, 255);
+    color: rgb(8, 13, 26);
+}

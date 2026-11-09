@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexChange | Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- TELA DE LOGIN -->
+        <section class="login-card" id="login-section">
+
+            <div class="logo">
+                <h1>Nex<span>Change</span>.</h1>
+            </div>
+
+            <div class="welcome">
+                <h2>Bem-vindo de volta!</h2>
+                <p>Seu dinheiro, sem fronteiras.</p>
+            </div>
+
+            <div class="input-group">
+
+                <form id="login-form">
+
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                    <br>
+
+                    <label for="password">Senha</label>
+                    <input
+                        type="password"
+                        name="senha"
+                        id="password"
+                        placeholder="Digite sua senha"
+                        minlength="6"
+                        required
+                    >
+
+                    <p id="password-strength"></p>
+
+                    <br>
+
+                    <button type="button" id="toggle-password">
+                        Mostrar senha
+                    </button>
+
+                    <br>
+
+                    <button type="submit">
+                        Entrar na conta
+                    </button>
+
+                </form>
+
+                <button type="button" id="forget-email">
+                    Esquecer e-mail
+                </button>
+
+                <p id="login-message"></p>
+
+            </div>
+
+            <p class="register">
+                Ainda não tem uma conta?
+                <a href="#">Cadastre-se</a>
+            </p>
+
+        </section>
+
+        <!-- TELA DO CONVERSOR -->
+        <section class="converter-card" id="converter-section" hidden>
+
+            <div class="logo">
+                <h1>Nex<span>Change</span>.</h1>
+            </div>
+
+            <div class="welcome">
+                <h2>Conversor de moedas</h2>
+                <p>Converta seu dinheiro sem fronteiras.</p>
+            </div>
+
+            <div class="input-group">
+
+                <label for="amount">Valor para converter</label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Digite um valor"
+                    min="0.01"
+                    step="0.01"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="from-currency">De:</label>
+
+                <select id="from-currency">
+                    <option value="BRL">Real brasileiro (BRL)</option>
+                    <option value="USD">Dólar americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="to-currency">Para:</label>
+
+                <select id="to-currency">
+                    <option value="USD">Dólar americano (USD)</option>
+                    <option value="BRL">Real brasileiro (BRL)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+
+            </div>
+
+            <button type="button" id="convert-button">
+                Converter moedas
+            </button>
+
+            <p id="conversion-result"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
